@@ -49,15 +49,12 @@ def run(songs)
   until input == "exit"
     if input == "help"
       help
-      puts "Please enter a command:"
       input = gets.chomp
     elsif input == "list"
       list(songs)
-      puts "Please enter a command:"
       input = gets.chomp
     elsif input == "play"
       play(songs)
-      puts "Please enter a command:"
       input = gets.chomp
     elsif input == "exit"
     else
