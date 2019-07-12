@@ -13,6 +13,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
+  
   if songs[input.to_i - 1]
     puts "Playing #{songs[input.to_i - 1]}"
   elsif songs.index(input)
