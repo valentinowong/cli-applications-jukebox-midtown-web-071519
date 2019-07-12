@@ -54,8 +54,6 @@ def run(songs)
       puts "Invalid response. Please enter a command."
       input = gets.chomp
     end
-    exit_jukebox
-  else
-    until 
   end
+  exit_jukebox  
 end
