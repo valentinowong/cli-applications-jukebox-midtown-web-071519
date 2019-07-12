@@ -37,19 +37,19 @@ def run(songs)
   puts "Please enter a command:"
   input = gets.chomp
   until input = "exit"
-    if input = "help"
+    if input == "help"
       help
       puts "Please enter a command:"
       input = gets.chomp
-    elsif input = "list"
+    elsif input == "list"
       list(songs)
       puts "Please enter a command:"
       input = gets.chomp
-    elsif input = "play"
+    elsif input == "play"
       play(songs)
       puts "Please enter a command:"
       input = gets.chomp
-    elsif input = "exit"
+    elsif input == "exit"
     else
       puts "Invalid response. Please enter a command."
       input = gets.chomp
